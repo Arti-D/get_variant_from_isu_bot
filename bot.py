@@ -22,7 +22,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         number = int(text)
         remainder = number % 20
         if remainder == 0:
-            await update.message.reply_text("Ващ вариант 20")
+            await update.message.reply_text("Ваш вариант 20")
         else:
             await update.message.reply_text(f"Ваш вариант {remainder}.")
     except ValueError:
