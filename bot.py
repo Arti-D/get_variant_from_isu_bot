@@ -13,7 +13,7 @@ TOKEN = os.environ.get("BOT_TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "Введите ваш порядковый номер в группе со скрина в беседе:"
+        "Введите ваш порядковый номер в группе со скрина в беседе (НЕ НОМЕР ИСУ)"
     )
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
